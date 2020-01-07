@@ -40,6 +40,7 @@ const App = () => {
     width: '100%',
     height: '30rem',
     objectFit: 'cover',
+    borderRadius: '5px',
   }
 
   const btnStyle = {
@@ -54,7 +55,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h3>Get random cat image by click button here</h3>
+      <h3 style={{marginTop: '2rem', color: 'white'}}>Get random cat image by click button here</h3>
       <button onClick={getCat} style={btnStyle}>Get Cat</button>
       <div style={catContainer} className="cat-pic">
         {!done ? (
